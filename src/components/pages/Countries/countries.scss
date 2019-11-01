@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.countries-wrapper {
+  padding: 16px;
+  position: relative;
+
+  .countries-table-header {
+    border-bottom: solid 1px $grayLight;
+    padding: 0 8px 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: $darkGray;
+  }
+  .countries-table {
+    overflow: auto;
+    height: 80vh;
+  }
+  .country-row {
+    height: $regionRowHeight;
+    line-height: $regionRowHeight;
+    padding: 0 8px;
+    margin-bottom: 8px;
+    color: $darkGray;
+    font-size: 20px;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 4px 1px 8px rgba(100, 100, 100, .3);
+      -webkit-box-shadow: 4px 1px 8px rgba(100, 100, 100, .3);
+    }
+
+    .country-row-number {
+      text-align: right;
+      max-width: 120px;
+    }
+  }
+}

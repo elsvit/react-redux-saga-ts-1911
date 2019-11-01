@@ -1,0 +1,34 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.regions-wrapper {
+  padding: 16px;
+
+  .regions-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: repeat-y;
+    opacity: 0.3;
+  }
+
+  .region-row {
+    width: 100%;
+    min-width: $minRegionRowWidth;
+    max-width: $maxRegionRowWidth;
+    height: $regionRowHeight;
+    line-height: $regionRowHeight;
+    padding: 0 8px;
+    margin-bottom: 8px;
+    color: $darkGray;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+}

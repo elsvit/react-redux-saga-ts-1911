@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.country-info-modal-wrapper {
+  padding: 90px 70px 70px;
+  @include breakpoint(400px) {
+    padding: 90px 20px;
+  }
+
+  .country-info-modal {
+    width: 100%;
+    max-width: $modalWidth;
+    min-width: 250px;
+    min-height: 500px;
+    max-height: 100vh;
+    margin: 0;
+    padding-top: 32px;
+    background-color: $white !important;
+    overflow: auto;
+
+    .country-info-content {
+      max-height: 70vh;
+      overflow: auto;
+
+      .country-info-wrapper {
+        width: 100%;
+        margin-top: 100px;
+      }
+    }
+  }
+}
+
+.country-info-modal .modal-close-icon {
+  width: 35px;
+  height: 35px;
+  right: 8px;
+  top: 8px;
+}
+
+.country-info-modal .modal-close-icon:before,
+.country-info-modal .modal-close-icon:after {
+  height: 5px;
+  border-radius: 100%;
+}
